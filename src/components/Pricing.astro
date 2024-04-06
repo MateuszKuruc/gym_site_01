@@ -2,7 +2,7 @@
 <!--                   Pricing                    -->
 <!-- ============================================ -->
 
-<section id="pricing-1769">
+<section id="pricing">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Pricing</span>
@@ -146,11 +146,11 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #pricing-1769 {
+  #pricing {
     padding: var(--sectionPadding);
     position: relative;
   }
-  #pricing-1769 .cs-container {
+  #pricing .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -161,7 +161,7 @@
     gap: clamp(3rem, 6vw, 4rem);
     position: relative;
   }
-  #pricing-1769 .cs-content {
+  #pricing .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -171,14 +171,14 @@
     align-items: center;
     position: relative;
   }
-  #pricing-1769 .cs-topper {
+  #pricing .cs-topper {
     color: var(--bodyTextColorWhite);
   }
-  #pricing-1769 .cs-title {
+  #pricing .cs-title {
     margin: 0;
     color: var(--bodyTextColorWhite);
   }
-  #pricing-1769 .cs-card-group {
+  #pricing .cs-card-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -189,7 +189,7 @@
     gap: clamp(1rem, 1.8vw, 1.25rem);
     position: relative;
   }
-  #pricing-1769 .cs-item {
+  #pricing .cs-item {
     text-align: left;
     list-style: none;
     width: 100%;
@@ -206,30 +206,30 @@
     align-items: stretch;
     position: relative;
   }
-  #pricing-1769 .cs-item.cs-popular {
+  #pricing .cs-item.cs-popular {
     background-color: #1A1A1A;
   }
-  #pricing-1769 .cs-item.cs-popular .cs-package {
+  #pricing .cs-item.cs-popular .cs-package {
     color: var(--bodyTextColorWhite);
   }
-  #pricing-1769 .cs-item.cs-popular .cs-price,
-  #pricing-1769 .cs-item.cs-popular .cs-item-p,
-  #pricing-1769 .cs-item.cs-popular .cs-li {
+  #pricing .cs-item.cs-popular .cs-price,
+  #pricing .cs-item.cs-popular .cs-item-p,
+  #pricing .cs-item.cs-popular .cs-li {
     color: var(--bodyTextColorWhite);
   }
-  #pricing-1769 .cs-item.cs-popular .cs-li.cs-disabled {
+  #pricing .cs-item.cs-popular .cs-li.cs-disabled {
     filter: brightness(550%);
   }
-  #pricing-1769 .cs-item.cs-popular .cs-button-solid {
+  #pricing .cs-item.cs-popular .cs-button-solid {
     transition: color 0.3s;
   }
-  #pricing-1769 .cs-item.cs-popular .cs-button-solid:hover {
+  #pricing .cs-item.cs-popular .cs-button-solid:hover {
     color: var(--primary);
   }
-  #pricing-1769 .cs-item.cs-popular .cs-button-solid:before {
+  #pricing .cs-item.cs-popular .cs-button-solid:before {
     background-color: #fff;
   }
-  #pricing-1769 .cs-package {
+  #pricing .cs-package {
     /* 13px - 16px */
     font-size: clamp(0.8125rem, 1.4vw, 1rem);
     font-weight: 700;
@@ -240,13 +240,13 @@
     color: var(--bodyTextColor);
     display: block;
   }
-  #pricing-1769 .cs-wrapper {
+  #pricing .cs-wrapper {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     gap: 0.5rem;
   }
-  #pricing-1769 .cs-price {
+  #pricing .cs-price {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -254,14 +254,14 @@
     margin: 0;
     color: var(--headerColor);
   }
-  #pricing-1769 .cs-item-p {
+  #pricing .cs-item-p {
     font-size: 1rem;
     line-height: 1.5em;
     text-align: inherit;
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #pricing-1769 .cs-ul {
+  #pricing .cs-ul {
     margin: 1.5rem 0 auto;
     padding: 1.5rem 0 0 0;
     display: flex;
@@ -270,7 +270,7 @@
     gap: 0.75rem;
     position: relative;
   }
-  #pricing-1769 .cs-ul:before {
+  #pricing .cs-ul:before {
     content: "";
     width: 100%;
     height: 1px;
@@ -281,7 +281,7 @@
     top: 0;
     left: 0;
   }
-  #pricing-1769 .cs-li {
+  #pricing .cs-li {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     list-style: none;
@@ -295,18 +295,18 @@
     align-items: flex-start;
     gap: 0.5rem;
   }
-  #pricing-1769 .cs-li.cs-disabled {
+  #pricing .cs-li.cs-disabled {
     opacity: 0.5;
   }
-  #pricing-1769 .cs-li.cs-disabled .cs-icon {
+  #pricing .cs-li.cs-disabled .cs-icon {
     filter: grayscale(1) brightness(300%);
   }
-  #pricing-1769 .cs-icon {
+  #pricing .cs-icon {
     width: 1.125rem;
     height: auto;
     display: block;
   }
-  #pricing-1769 .cs-button-solid {
+  #pricing .cs-button-solid {
     font-size: 1rem;
     font-weight: 700;
     /* 46px - 56px */
@@ -325,7 +325,7 @@
     position: relative;
     z-index: 1;
   }
-  #pricing-1769 .cs-button-solid:before {
+  #pricing .cs-button-solid:before {
     content: "";
     width: 0%;
     height: 100%;
@@ -338,17 +338,17 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #pricing-1769 .cs-button-solid:hover:before {
+  #pricing .cs-button-solid:hover:before {
     width: 100%;
   }
-  #pricing-1769 .cs-price-button {
+  #pricing .cs-price-button {
     width: 100%;
     border-radius: 0;
   }
-  #pricing-1769 .cs-price-button:before {
+  #pricing .cs-price-button:before {
     border-radius: 0;
   }
-  #pricing-1769 .cs-background {
+  #pricing .cs-background {
     width: 100%;
     height: 100%;
     display: block;
@@ -357,7 +357,7 @@
     left: 0;
     z-index: -2;
   }
-  #pricing-1769 .cs-background:before {
+  #pricing .cs-background:before {
     /* Overlay */
     content: "";
     width: 100%;
@@ -372,7 +372,7 @@
     /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
-  #pricing-1769 .cs-background img {
+  #pricing .cs-background img {
     width: 100%;
     height: 100%;
     /* turns the image black and white */
@@ -385,7 +385,7 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #pricing-1769 .cs-card-group {
+  #pricing .cs-card-group {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;

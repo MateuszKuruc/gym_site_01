@@ -2,7 +2,7 @@
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-1836">
+<section id="hero">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Best Gym Of The City For Fitness</span>
@@ -34,7 +34,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #hero-1836 {
+  #hero {
     /* 200px - 300px - leaving extra space for the navigation */
     padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem;
     /* prevents the topper line from causing an overflow */
@@ -42,7 +42,7 @@
     position: relative;
     z-index: 1;
   }
-  #hero-1836 .cs-container {
+  #hero .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -52,7 +52,7 @@
     flex-wrap: wrap;
     gap: 3rem;
   }
-  #hero-1836 .cs-content {
+  #hero .cs-content {
     text-align: left;
     width: 100%;
     max-width: 46.875rem;
@@ -62,21 +62,21 @@
     position: relative;
     z-index: 1;
   }
-  #hero-1836 .cs-title {
+  #hero .cs-title {
     /* 49px - 84px */
     font-size: clamp(3.0625rem, 6vw, 5.25rem);
     max-width: 100%;
     letter-spacing: -2px;
   }
-  #hero-1836 .cs-title,
-  #hero-1836 .cs-text {
+  #hero .cs-title,
+  #hero .cs-text {
     text-align: left;
     color: var(--bodyTextColorWhite);
   }
-  #hero-1836 .cs-text {
+  #hero .cs-text {
     margin-bottom: 2rem;
   }
-  #hero-1836 .cs-button-solid {
+  #hero .cs-button-solid {
     font-size: 1rem;
     font-weight: 700;
     /* 46px - 56px */
@@ -95,7 +95,7 @@
     position: relative;
     z-index: 1;
   }
-  #hero-1836 .cs-button-solid:before {
+  #hero .cs-button-solid:before {
     content: "";
     width: 0%;
     height: 100%;
@@ -108,10 +108,10 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #hero-1836 .cs-button-solid:hover:before {
+  #hero .cs-button-solid:hover:before {
     width: 100%;
   }
-  #hero-1836 .cs-content-graphic {
+  #hero .cs-content-graphic {
     height: 305%;
     max-height: 81.25rem;
     width: auto;
@@ -123,7 +123,7 @@
     transform: translateY(-50%);
     z-index: -3;
   }
-  #hero-1836 .cs-graphic {
+  #hero .cs-graphic {
     width: 100%;
     min-width: 120rem;
     height: auto;
@@ -134,10 +134,10 @@
     z-index: 2;
     transform: translateX(-50%);
   }
-  #hero-1836 .cs-graphic-dark {
+  #hero .cs-graphic-dark {
     display: none;
   }
-  #hero-1836 .cs-background {
+  #hero .cs-background {
     width: 100%;
     height: 100%;
     display: block;
@@ -147,7 +147,7 @@
     z-index: -2;
     /* Overlay on the background image that gets removed at tablet+, in favour of the svg graphic */
   }
-  #hero-1836 .cs-background:before {
+  #hero .cs-background:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -161,7 +161,7 @@
     left: 0;
     z-index: 1;
   }
-  #hero-1836 .cs-background img {
+  #hero .cs-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -172,13 +172,13 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #hero-1836 .cs-background::before {
+  #hero .cs-background::before {
     content: none;
   }
 }
 /* Desktop Parallax - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #hero-1836 .cs-background {
+  #hero .cs-background {
     background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png");
     background-size: cover;
     background-position: center;
@@ -186,13 +186,13 @@
     /* creates the parallax effect */
     background-attachment: fixed;
   }
-  #hero-1836 .cs-background img {
+  #hero .cs-background img {
     display: none;
   }
 }
 /* Large Desktop - 1920px */
 @media only screen and (min-width: 120rem) {
-  #hero-1836 {
+  #hero {
     /* this ties the padding bottom value to the size of the screen width. The wider the image gets the taller it gets, meaning it will get closer and closer to the content. This makes the padding bottom value grow with the screen size so it accounts for the growing height of the svg graphic getting taller */
     padding-bottom: 14vw;
   }
