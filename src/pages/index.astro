@@ -1,16 +1,19 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro"
+import Hero from "../components/Hero.astro"
+import Services from "../components/Services.astro"
+import Sbs from "../components/Sbs.astro"
+import WhyUs from "../components/WhyUs.astro"
+import Pricing from "../components/Pricing.astro"
+import CTA from "../components/CTA.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Gym Services">
+	<Hero />
+	<Services />
+	<Sbs />
+	<CTA />
+	<WhyUs />
+	<Pricing />
+
+</MainLayout>
