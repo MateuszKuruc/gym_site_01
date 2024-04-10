@@ -52,7 +52,7 @@ const { title } = Astro.props;
 <style is:global>
 :root {
     --primary: #ff6a3e;
-    --primaryLight: #ffba43;
+    --primaryLight: #f74813;
     --secondary: #ffba43;
     --secondaryLight: #ffba43;
     --headerColor: #1a1a1a;
@@ -66,21 +66,41 @@ const { title } = Astro.props;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
-/* playfair-display-italic - latin_latin-ext */
+/* syne-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
-  font-style: italic;
+  font-family: 'Syne';
+  font-style: normal;
   font-weight: 400;
-  src: url('../fonts/playfair-display-v37-latin_latin-ext-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/syne-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* playfair-display-700 - latin_latin-ext */
+/* syne-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Playfair Display';
+  font-family: 'Syne';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/playfair-display-v37-latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/syne-v22-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syne';
 }
 
 html {
@@ -90,6 +110,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Inter';
 }
 
 *, *:before, *:after {
@@ -106,6 +127,7 @@ body {
     color: var(--primary);
     margin-bottom: 0.25rem;
     display: block;
+    font-family: 'Syne';
 }
 
 .cs-title {
@@ -128,4 +150,44 @@ body {
     margin: 0;
     color: var(--bodyTextColor);
 }
+.cs-button-10 {
+    text-align: center;
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 8vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    min-width: 10.875rem;
+    margin: auto;
+    color: #fff;
+    padding: 0 2rem;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    background-color: #f15a24;
+    box-shadow: 4px 4px 0px 0px #1a1a1a;
+    box-shadow: 4px 4px 0px 0px var(--secondary);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+    position: relative;
+    z-index: 1;
+    transform: skew(-10deg);
+    margin: 0;
+    transition:
+        background-color 0.3s,
+        box-shadow 0.3s;
+}
+.cs-button-10 .cs-icon {
+    transition: transform 0.3s;
+}
+.cs-button-10:hover {
+    background-color: #1a1a1a;
+    background-color: var(--secondary);
+    box-shadow: 4px 4px 0px 0px var(--primary);
+}
+.cs-button-10:hover .cs-icon {
+    transform: translateX(0.25rem);
+}
+
 </style>
